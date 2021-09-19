@@ -1,0 +1,15 @@
+#display {
+  color: black;
+  font-weight: bolder;
+}
+#button {
+  background-color: blue;
+  font-weight: bolder;
+  font-size: larger;
+  margin: 20px;
+  padding: 20px;
+}
+.container {
+  text-align: center;
+  font-size: larger;
+}
