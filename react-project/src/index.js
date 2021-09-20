@@ -19,9 +19,11 @@ const yearName = date.getFullYear();
 ReactDOM.render(
   <div>
     <h1 className="headingStyle">Todo App</h1>
-    <h3>{todoTitle}</h3>
-    <p>{todoDesc}</p>
-    <p>{dateName + " /" + monthName + " /" + yearName}</p>
+    <div className="card">
+    <h3 className ="cardTitle">{todoTitle}</h3>
+    <p className = "cardDesc">{todoDesc}</p>
+    <p className ="cardFooter">{dateName + " /" + monthName + " /" + yearName}</p>
+    </div>
   </div>,
 document.getElementById('root')
 );
