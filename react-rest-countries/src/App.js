@@ -1,13 +1,55 @@
-import './App.css';
-import { useEffect, useState } from 'react';
+import './App.css'
+import Countries from './component/Countries/Countries';
 
 function App() {
   return (
     <div className="App">
       <Countries></Countries>
-    </div>
+       </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function Countries(){
   const[countries, setCountries] = useState([]);
   useEffect(() => {
@@ -34,4 +76,5 @@ function Country(props){
     </div>
   )
 }
+*/
 export default App;
