@@ -1,6 +1,3 @@
-const db ={};
-
-
 const addToDb = item => {
     const db = getDb();
     if(item in db){
@@ -9,12 +6,20 @@ const addToDb = item => {
     else{
         db[item] = 1;
     }
+    saveToDb(db);
 }
-    const removeFromDb = item => {
-        const db = getDb();
-        delete db[item];
-    }  
+const removeFromDb = item => {
+    const db = getDb();
+    delete db[item];
+    saveToDb(db);
+}  
 
+const saveToDb = db => {
+    const dbJSON = JSON.stringify(db);
+    localStorage.setItem('shopping-cart', dbJSON)
+} 
 const getDb = () => {
-    return db;
+    const savedDb = localStorage.getItem('shopping-cart');
+    savedDb = JSON.parse(savedDb);
+    return savedDb;
 }
