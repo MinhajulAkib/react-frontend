@@ -31,7 +31,8 @@ function User(props){
     border:'3px solid blue',
     borderRadius:'10px',
     margin:'10px',
-    padding:'10px'
+    padding:'10px',
+    backgroundColor:'white'
   }
   return(
     <div className="User" style={UserStyle}>
