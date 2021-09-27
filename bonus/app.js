@@ -9,6 +9,12 @@ const addToDb = item => {
     else{
         db[item] = 1;
     }
+}
+    const removeFromDb = item => {
+        const db = getDb();
+        delete db[item];
+    }  
+
 const getDb = () => {
     return db;
 }
