@@ -3,9 +3,12 @@ const db ={};
 
 const addToDb = item => {
     const db = getDb();
-    db[item] = 1;
-    console.log(db);
-
+    if(item in db){
+        db[item] = db[item] +1;
+    }
+    else{
+        db[item] = 1;
+    }
 const getDb = () => {
     return db;
 }
